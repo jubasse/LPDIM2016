@@ -175,12 +175,12 @@ abstract class AbstractMessage implements MessageInterface
     {
         $pos = strpos($message, PHP_EOL.PHP_EOL);
 
-        return (string) substr($message, $pos+2);
+        return (string) substr($message, $pos+4);
     }
 
     protected static function parseHeaders($message)
     {
-        $start = strpos($message, PHP_EOL) + 1;
+        $start = strpos($message, PHP_EOL) + 2;
         $end = strpos($message, PHP_EOL.PHP_EOL);
         $length = $end - $start;
         $lines = explode(PHP_EOL, substr($message, $start, $length));

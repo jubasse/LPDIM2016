@@ -61,9 +61,7 @@ class PhpRendererTest extends \PHPUnit_Framework_TestCase
     private function getExpectedOutput()
     {
         $message = <<<OUTPUT
-<p>
-    Hello Hugo!
-</p>
+<p>Hello Hugo!</p>
 OUTPUT;
 
         return $message;

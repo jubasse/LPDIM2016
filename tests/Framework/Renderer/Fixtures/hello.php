@@ -1,3 +1,1 @@
-<p>
-    Hello <?= $view->e($name) ?>!
-</p>
+<p>Hello <?= $view->e($name) ?>!</p>
